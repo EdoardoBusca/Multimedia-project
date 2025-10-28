@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart Generator - Stage 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Pie Chart Generator</h1>
+        <p>Stage 1: HTML & CSS Implementation</p>
+    </div>
+
+    <div class="container">
+        <div class="input-section">
+            <h2>Enter Your Data</h2>
+            <div id="data-container">
+                <div class="data-row">
+                    <input type="text" placeholder="Label" value="Sales">
+                    <input type="number" placeholder="Value" value="100">
+                    <input type="color" class="color-picker" value="#3498db">
+                    <button class="remove-btn">X</button>
+                </div>
+                <div class="data-row">
+                    <input type="text" placeholder="Label" value="Marketing">
+                    <input type="number" placeholder="Value" value="75">
+                    <input type="color" class="color-picker" value="#2ecc71">
+                    <button class="remove-btn">X</button>
+                </div>
+                <div class="data-row">
+                    <input type="text" placeholder="Label" value="Development">
+                    <input type="number" placeholder="Value" value="50">
+                    <input type="color" class="color-picker" value="#e74c3c">
+                    <button class="remove-btn">X</button>
+                </div>
+            </div>
+            
+            <button class="add-btn" id="addRow">+ Add Data Row</button>
+            <button class="generate-btn" id="generateChart">Generate Pie Chart</button>
+        </div>
+
+        <div class="chart-section">
+            <h2>Your Pie Chart</h2>
+            <div class="chart-placeholder">
+                Chart will appear here in Stage 2
+            </div>
+            <div class="legend" id="legend">
+                <!-- Legend items will go here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h2>How to Use:</h2>
+        <ol>
+            <li>Enter your data in the left panel</li>
+            <li>Click "Add Data Row" for more categories</li>
+            <li>Choose colors for each category</li>
+            <li>Click "Generate Pie Chart" to create your chart</li>
+            <li>In Stage 2, we'll add the actual chart using Canvas API</li>
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
